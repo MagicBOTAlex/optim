@@ -73,3 +73,5 @@ irlc/project0/fruit*_complete*.py
 **/*.aux
 **.pdf
 irlc/project1/Project1_handin_160_of_160.token
+
+**data/**
