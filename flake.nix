@@ -124,7 +124,7 @@
 
               KERNEL="$(basename "$PWD")"
               jupyter kernelspec list 2>/dev/null | grep -qw "$KERNEL" || \
-                uv run python -m ipykernel install --user --name="$KERNEL" --display-name="Python ($KERNEL)"
+                uv run --active python -m ipykernel install --user --name="$KERNEL" --display-name="Python ($KERNEL)"
 
               # Sync project requirements directly to the system environment
               uv sync --system
