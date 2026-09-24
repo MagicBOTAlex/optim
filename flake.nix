@@ -127,7 +127,7 @@
                 uv run --active python -m ipykernel install --user --name="$KERNEL" --display-name="Python ($KERNEL)"
 
               # Sync project requirements directly to the system environment
-              uv sync --system
+              uv sync
 
               echo "Environment ready!"
               python3 -c "import _tkinter; import tkinter; print('Tkinter loaded successfully!')"
